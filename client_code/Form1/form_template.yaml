@@ -1,5 +1,43 @@
 components:
-- components: []
+- components:
+  - components:
+    - components:
+      - layout_properties: {grid_position: 'HLBWVP,EQPOWL'}
+        name: question_lbl
+        properties: {align: center, background: 'theme:Primary Container', foreground: 'theme:Error', role: headline, text: 'Who is this?'}
+        type: Label
+      - layout_properties: {grid_position: 'WKUJFQ,IRNPHN'}
+        name: image_1
+        properties: {source: _/theme/download.png}
+        type: Image
+      - event_bindings: {click: alfred_deakin_btn_click}
+        layout_properties: {grid_position: 'AUDTRY,QPKFYX'}
+        name: alfred_deakin_btn
+        properties: {font_size: 25, icon: 'fa:500px', role: tonal-button, text: Alfred Deakin}
+        type: Button
+      - event_bindings: {click: edmund_barton_btn_click}
+        layout_properties: {grid_position: 'RGIETO,NUYLTO'}
+        name: edmund_barton_btn
+        properties: {font_size: 25, icon: 'fa:500px', role: tonal-button, text: Edmund Barton}
+        type: Button
+      - event_bindings: {click: john_curtin_btn_click}
+        layout_properties: {grid_position: 'GSCFQF,XJWFQY'}
+        name: john_curtin_btn
+        properties: {font_size: 25, icon: 'fa:500px', role: tonal-button, text: John Curtin}
+        type: Button
+      - event_bindings: {click: andrew_fisher_btn_click}
+        layout_properties: {grid_position: 'KQUMKP,RPBUAS'}
+        name: andrew_fisher_btn
+        properties: {font_size: 24, icon: 'fa:500px', role: tonal-button, text: Andrew Fisher}
+        type: Button
+      layout_properties: {grid_position: 'MEBCDQ,OOAVCG'}
+      name: column_panel_1
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: 'TKUFNW,MJQWJG'}
+    name: outlined_card_1
+    properties: {role: outlined-card}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
